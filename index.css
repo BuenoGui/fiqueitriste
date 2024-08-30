@@ -1,0 +1,103 @@
+body {
+    flex-wrap: wrap;
+    
+}
+
+.header-princial {
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(250, 235, 215);
+    
+}
+
+.header-princial > .container {
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+} 
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+header {
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+
+}
+
+header > nav.navbar {
+    padding-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.submenu,
+.dropdown-menu {
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.menu > li {
+    float: left;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.menu {
+    background-color: #313b3b85;
+    position: absolute;
+    z-index: 1;
+    border-radius: 20px ;
+    border: 2px solid #000000;
+}
+
+.menu li:hover .submenu,
+.submenu:hover {
+    display: block;
+    background-color: #fff;
+}
+
+.menu li:hover {
+    border-color: rgb(168, 20, 77);
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+}
+
+.botoes {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botoes button {
+    display: flex;
+    height: 80%;
+    max-width: 48px;
+    justify-content: center;
+}
+
+.botoes button > img  {
+    height: 100%;
+}
+
+button.navbar-toggler {
+    align-items: center;
+}
+
+button.btn > a {
+    color: rgb(255, 243, 243);
+}
+
+ul li {
+    list-style: none;
+}
+

@@ -5,12 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria Bootstrap</title>
     <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="d-flex justify-content-end">
     
+    <header>
+        <nav class="navbar navbar-light">
+            <div class="header-princial d-flex">
+                <div class="container d-flex">
+                    <h1 class="col-9 ">Dog's Store</h1>
 
 
+                    <div class="botoes col-3 d-flex ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
+                        <button class="navbar-toggler" id="Carrinho">
+                            <img src="src/images/carrinho.png"></img>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <nav class="container">
+                <ul class="menu collapse navbar-collapse" id="menu">
+                    <li>
+                        <button class="btn"><a href="#">Inicio</a></button>
+                        <ul class="submenu">
+                                <li>
+                                    <div class="btn-group">
+                                        <a class="btn btn-warning" href="#">Login</a>
+                                        <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"></button>
+                                    <ul class="dropdown-menu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="#">Perdi a senha</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#">Esqueci usuario</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <button class="btn"><a href="#Best-Sallers">Produtos</a></button>
+                        <ul class="submenu">
+                                <li>
+                                    <div class="btn-group">
+                                        <a class="btn btn-warning" href="#">Livros</a>
+                                        <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+                                            
+                                        </button>
+                                    <ul class="dropdown-menu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="#Best-Sallers">Best-Salers</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#terror">Terror</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#documentarios">Documentarios</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#biografias">autobiografia</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="btn-group">
+                                        <a class="btn btn-warning" href="#quadros">Quadros</a>
+                                        <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+                                            
+                                        </button>
+                                    <ul class="dropdown-menu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="#borda-clara">Bordas Claras</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#borda-escura">Bordas Escuras</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="btn-group">
+                                        <a class="btn btn-warning" href="#">Pelucias</a>
+                                        <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+                                            
+                                        </button>
+                                    <ul class="dropdown-menu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="#animais">Animais</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#ficticios">Ficticios</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#antialergico">Antialergico</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button class="btn"><a href="#lojas">Lojas</a></button>
+                        <ul class="submenu">
+                                <li>
+                                    <div class="btn-group">
+                                        <a class="btn btn-warning" href="#lojas">Lojas</a>
+                                        <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"></button>
+                                    <ul class="dropdown-menu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="#lojas">Endereços</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#lojas">Contato</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button class="btn"><a href="#lojas">Contato</a></button>
+                    </li>
+            </nav>
+        </div>
+    </header>
+
+    <div class="col-10 secoes">
+
+        <section>
+            <div class="container d-flex flex-wrap">
+                <h2 class="h1 col-12">Best-Salers</h2>
+                <div class="col-7">
+                    <h3>Titulo-do-Livro</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis in velit saepe ipsa quas! Deserunt, libero aliquam repellendus ab aperiam veniam non a provident sapiente sequi iste maiores itaque vero.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident delectus quae aliquid labore libero dolorum soluta optio eius sint saepe, ipsum, cupiditate aliquam nulla? Nostrum quibusdam recusandae deserunt nobis dignissimos?</p>
+                </div>
+                <div class="col-5"> 
+                    <div class="card-body">
+                        <img src="//via.placeholder.com/350x400" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
 
 
 
@@ -20,5 +172,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="src/JS/jquery.mask.min.js"></script>
     <script src="src/JS/jquery.validate.min.js"></script>
+
 </body>
 </html>
