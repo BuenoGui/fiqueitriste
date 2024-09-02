@@ -125,13 +125,28 @@ div h2 {
 
 div.card-body img {
     width: 100%;
-    height: auto;
+    height: 480px;
 }
 
 .texto {
     margin: 4%;
 }
 
-.carousel-control-next-icon {
-    background-color: #000000;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #00000091;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    width: 5%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carousel-indicators {
+    width: 38%;
+    background-color: #00000060;
 }
