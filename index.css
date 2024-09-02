@@ -101,3 +101,37 @@ ul li {
     list-style: none;
 }
 
+.comprar {
+    margin-top: 5%;
+}
+
+.comprar button {
+    width: 40%;
+}
+
+.comprar strong {
+    width: 60%;
+    align-self: center;
+}
+
+section div.container.d-flex.flex-wrap.justify-content-around h3.h1 {
+margin-bottom: 20%;
+text-decoration: underline;
+}
+
+div h2 {
+    text-decoration: underline;
+}
+
+div.card-body img {
+    width: 100%;
+    height: auto;
+}
+
+.texto {
+    margin: 4%;
+}
+
+.carousel-control-next-icon {
+    background-color: #000000;
+}

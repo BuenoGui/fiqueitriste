@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="src/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
-<body class="d-flex justify-content-end">
+<body class="d-flex">
     
     <header>
         <nav class="navbar navbar-light">
             <div class="header-princial d-flex">
                 <div class="container d-flex">
                     <h1 class="col-9 ">Dog's Store</h1>
-
-
                     <div class="botoes col-3 d-flex ">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                             <span class="navbar-toggler-icon"></span>
@@ -145,22 +143,65 @@
         </div>
     </header>
 
-    <div class="col-10 secoes">
+    <div class="col-12 secoes">
 
         <section>
-            <div class="container d-flex flex-wrap">
-                <h2 class="h1 col-12">Best-Salers</h2>
-                <div class="col-7">
-                    <h3>Titulo-do-Livro</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis in velit saepe ipsa quas! Deserunt, libero aliquam repellendus ab aperiam veniam non a provident sapiente sequi iste maiores itaque vero.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident delectus quae aliquid labore libero dolorum soluta optio eius sint saepe, ipsum, cupiditate aliquam nulla? Nostrum quibusdam recusandae deserunt nobis dignissimos?</p>
-                </div>
-                <div class="col-5"> 
-                    <div class="card-body">
-                        <img src="//via.placeholder.com/350x400" alt="">
+            <div class="container d-flex flex-wrap justify-content-around">
+                <h2 class="h1 col-12 mb-5 mt-5">Best-Salers</h2>
+                <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="container d-flex justify-content-around">
+                    <button data-bs-target="#carousel" class="carousel-control-prev" type="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <div class="carousel-inner">
+
+                        <div class="container d-flex col-12 carousel-item active">
+                            <div class="texto d-flex flex-wrap justify-content-center text-center align-items-center col-7">
+                                <h4 class="h2">A Sombra do Corvo Branco</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi aliquam iusto quod, debitis dolorem est earum ad porro facilis non quas autem possimus illo. Aliquam placeat aut at adipisci.
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id impedit dolores modi ipsam ab facere ex dolorem ratione voluptas, fugiat minus perspiciatis. Et natus esse voluptatum culpa alias eligendi aliquid.
+                                </p>
+                            </div>
+                            <div class="card-body col-5">
+                                <img src="src/images/A-Sombra-do-Corvo-Branco.jpg">
+                                <div class="comprar d-flex justify-content-center text-center">
+                                    <strong> R$ 48,90</strong>
+                                    <button type="button" class="btn btn-success">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container d-flex col-12 carousel-item">
+                            <div class="texto d-flex flex-wrap justify-content-center text-center align-items-center col-7">
+                                <h4 class="h2">O Jardim das Almas Perdidas</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi aliquam iusto quod, debitis dolorem est earum ad porro facilis non quas autem possimus illo. Aliquam placeat aut at adipisci.
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id impedit dolores modi ipsam ab facere ex dolorem ratione voluptas, fugiat minus perspiciatis. Et natus esse voluptatum culpa alias eligendi aliquid.
+                                </p>
+                            </div>
+                            <div class="card-body col-5">
+                                <img src="src/images/O-Jardim-das-Almas-Perdidas.jpg">
+                                <div class="comprar d-flex justify-content-center text-center">
+                                    <strong> R$ 48,90</strong>
+                                    <button type="button" class="btn btn-success">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
+
+                    <button data-bs-target="#carousel" class="carousel-control-next" type="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+                </div>
                 </div>
             </div>
         </section>
+
 
     </div>
 
