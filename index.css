@@ -107,10 +107,11 @@ ul li {
 
 .comprar button {
     width: 40%;
+    bottom: 0;
 }
 
 .comprar strong {
-    width: 60%;
+    width: 40%;
     align-self: center;
 }
 
@@ -149,4 +150,12 @@ div.card-body img {
 .carousel-indicators {
     width: 38%;
     background-color: #00000060;
+}
+
+.secoes > * {
+    margin-bottom: 6%;
+}
+
+.tabela-itens > * {
+    margin: 2% 4%;
 }
