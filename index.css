@@ -115,11 +115,6 @@ ul li {
     align-self: center;
 }
 
-section div.container.d-flex.flex-wrap.justify-content-around h3.h1 {
-margin-bottom: 20%;
-text-decoration: underline;
-}
-
 div h2 {
     text-decoration: underline;
 }
@@ -138,7 +133,6 @@ div.card-body img {
     background-color: #00000091;
 }
 
-
 .carousel-control-next,
 .carousel-control-prev {
     position: absolute;
@@ -153,7 +147,7 @@ div.card-body img {
 }
 
 .secoes > * {
-    margin-bottom: 6%;
+    margin-bottom: 7%;
 }
 
 .tabela-itens > * {
