@@ -150,6 +150,25 @@ div.card-body img {
     margin-bottom: 7%;
 }
 
+.secoes aside {
+    margin: 0;
+}
+
 .tabela-itens > * {
     margin: 2% 4%;
 }
+
+aside {
+    position: sticky;
+    top: 15%;
+    z-index: 1;
+}
+
+aside ul {
+    margin-bottom: 26px;
+}
+
+.aside-main > li {
+    list-style: square;
+}
+
