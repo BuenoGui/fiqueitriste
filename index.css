@@ -159,7 +159,7 @@ div.card-body img {
 }
 
 aside {
-    position: sticky;
+    position: fixed;
     top: 15%;
     z-index: 1;
 }
@@ -172,3 +172,11 @@ aside ul {
     list-style: square;
 }
 
+.aside-main ul li {
+    margin-top: 12px;
+}
+
+#quadros .comprar {
+    margin: 2% 0;
+    height: 42px;
+}
