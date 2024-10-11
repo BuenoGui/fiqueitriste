@@ -168,8 +168,16 @@ aside ul {
     margin-bottom: 26px;
 }
 
+.aside-main a {
+    color: #000000;
+}
+
 .aside-main > li {
     list-style: square;
+}
+
+.aside-main ul li {
+    list-style: circle;
 }
 
 .aside-main ul li {
@@ -180,3 +188,20 @@ aside ul {
     margin: 2% 0;
     height: 42px;
 }
+
+.loja img {
+    max-width: 480px;
+    width: 60%;
+}
+
+#sobre > * {
+    margin-bottom: 3%;
+}
+#sobre h2.h1 {
+    margin-bottom: 5%;
+}
+
+#sobre .loja-texto {
+    width: 360px;
+}
+

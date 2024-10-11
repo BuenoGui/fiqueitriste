@@ -19,8 +19,8 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <button class="navbar-toggler" id="Carrinho">
-                            <img src="src/images/carrinho.png"></img>
+                        <button class="navbar-toggler" id="Carrinho" onclick="DeslizarLoja()">
+                            <img src="src/images/carrinho.png" />
                         </button>
                     </div>
 
@@ -94,7 +94,7 @@
                                     </div>
                                 </li>
 
-                                <li>
+                                <!-- <li>
                                     <div class="btn-group">
                                         <a class="btn btn-warning" href="#">Pelucias</a>
                                         <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
@@ -112,12 +112,12 @@
                                         </li>
                                     </ul>
                                     </div>
-                                </li>
+                                </li> -->
                         </ul>
                     </li>
 
                     <li>
-                        <button class="btn"><a href="#lojas">Lojas</a></button>
+                        <button class="btn"><a href="#sobre">Lojas</a></button>
                         <ul class="submenu">
                                 <li>
                                     <div class="btn-group">
@@ -125,10 +125,10 @@
                                         <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"></button>
                                     <ul class="dropdown-menu dropdown-menu">
                                         <li class="dropdown-item">
-                                            <a href="#lojas">Endereços</a>
+                                            <a href="#sobre">Endereços</a>
                                         </li>
                                         <li class="dropdown-item">
-                                            <a href="#lojas">Contato</a>
+                                            <a href="#sobre">Contato</a>
                                         </li>
                                     </ul>
                                     </div>
@@ -145,10 +145,10 @@
 
     <div class="col-12 secoes">
     
-        <aside>
+        <!-- <aside>
             <ul class="aside-main">
                 <li>
-                    <a href="#Best-Sallers">Livros</a>
+                    <a href="#Best-Sallers" class="h5">Livros</a>
                     <ul class="aside-sub">
                         <li>
                             <a href="#terror">Terror</a>
@@ -159,7 +159,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#bordas-claras">Quadros</a>
+                    <a href="#borda-clara" class="h5">Quadros</a>
                     <ul class="aside-sub">
                         <li>
                             <a href="#borda-clara">Bordas Claras</a>
@@ -168,6 +168,9 @@
                             <a href="#borda-escura">Bordas Escuras</a>
                         </li>
                     </ul>
+                </li>
+                <li>
+                    <a href="#sobre" class="h5">Endereços</a>
                 </li>
 
             </ul>
@@ -299,7 +302,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
         <section id="terror">
             <div class="container">
@@ -384,7 +387,7 @@
             
         </section>
 
-        <section id="documentarios">
+        <!-- <section id="documentarios">
             <div class="container">
                 <h2 class="h1"> Livros documentarios</h2>
 
@@ -555,7 +558,37 @@
             </div>
             
             
-        </section>
+        </section> -->
+
+        <!-- <section id="sobre">
+            <div class="container">
+            <h2 class="h1">Lojas</h2>
+                <div class="loja d-flex justify-content-around">
+                    <img src="src/images/frente-loja01.png">
+                    <div class="loja-texto d-flex flex-column text-center justify-content-center">
+                        <h4>Loja 1</h4>
+                        <strong>Atibaia - Sp</strong>
+                        <p>Av. São Paulo, N° 1567</p>
+                        <strong>4412-3792</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="loja d-flex justify-content-around">
+                    <img src="src/images/frente-loja02.png">
+                    <div class="loja-texto d-flex flex-column text-center justify-content-center">
+                        <h4>Loja 2</h4>
+                        <strong>Barueri - Sp</strong>
+                        <p>R. Duque de Caixias, N° 47</p>
+                        <strong>4412-3792</strong>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="carrinho"></section>
+
 
     </div>
 
