@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-    function DeslizarLoja() {
-        $('.carrinho').animate({
-            width: 'toggle'
-        }, 1300);  
-        window.alert('foi')
-    }
-
         let Carrinho = {};
         let PrecoTotal = 0;
 
@@ -16,7 +9,7 @@ $(document).ready(function() {
         });
 
         function AtualizarCarrinho () {
-            const corpoCarrinho = document.querySelector('#carrinho-itens');
+            const corpoCarrinho = document.querySelector('.carrinho-itens');
             corpoCarrinho.innerHTML = "";
 
             for (let item in Carrinho) {
@@ -43,9 +36,9 @@ $(document).ready(function() {
             }
         }
 
-        function AtualizarTotal(button) {
+        function AtualizarTotal (button) {
 
-            const carta = button.closest('.card-body')
+            const carta = $(button).closest('.card-body')
             const ItemEscolhido = carta.find('h4').text();
             const PrecoEscolhido = parseFloat(carta.find('#Valor').text().replace(",","."));
             const FotoEscolhida = carta.parent().find('img').attr('src');
@@ -65,5 +58,13 @@ $(document).ready(function() {
             Total.innerHTML = `R$ ${PrecoTotal.toFixed(2).replace(".",",")}`
 
         }
+
+        $('#Carrinho').click(function(){
+            $('.carrinho').animate({
+                width: 'toggle'
+            }, 1300)
+
+            console.log("abracadabra")
+        })
 
 });

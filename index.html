@@ -19,7 +19,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <button class="navbar-toggler" id="Carrinho" onclick="DeslizarLoja()">
+                        <button type="submit" class="navbar-toggler" id="Carrinho">
                             <img src="src/images/carrinho.png" />
                         </button>
                     </div>
@@ -558,9 +558,9 @@
             </div>
             
             
-        </section> -->
+        </section>
 
-        <!-- <section id="sobre">
+        <section id="sobre">
             <div class="container">
             <h2 class="h1">Lojas</h2>
                 <div class="loja d-flex justify-content-around">
@@ -587,19 +587,70 @@
         </section> -->
 
 
-        <section class="carrinho"></section>
+        <section class="carrinho">
+            <div class="container d-flex flex-column">
+                <div class="carrinho-itens d-flex flex-column align-items-center">
+
+                    <div class="item mt-3">
+                        <div class="card text-center">
+                            <h2 class="h4 mb-3">O Ritual da Noite Eterna</h2>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="src/images/O Ritual da Noite Eterna.jpg" class="img-carrinho">
+                                <div class="btn-carrinho d-flex  justify-content-around align-items-center">
+                                    <button class="btn btn-light">+</button>
+                                    <p>1</p>
+                                    <button class="btn btn-light">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="item mt-3">
+                    <div class="card text-center">
+                        <h2 class="h4 mb-3">O Ritual da Noite Eterna</h2>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="src/images/O Ritual da Noite Eterna.jpg" class="img-carrinho">
+                            <div class="btn-carrinho d-flex  justify-content-around align-items-center">
+                                <button class="btn btn-light">+</button>
+                                <p>1</p>
+                                <button class="btn btn-light">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item mt-3">
+                    <div class="card text-center">
+                        <h2 class="h4 mb-3">O Ritual da Noite Eterna</h2>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="src/images/O Ritual da Noite Eterna.jpg" class="img-carrinho">
+                            <div class="btn-carrinho d-flex  justify-content-around align-items-center">
+                                <button class="btn btn-light">+</button>
+                                <p>1</p>
+                                <button class="btn btn-light">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+                <div class="text-center total-carrinho">
+                    <h3 id="total">Total: R$ 27,40</h3>
+                </div>
+            </div>
+        </section>
 
 
     </div>
 
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="src/JS/jquery.mask.min.js"></script>
     <script src="src/JS/jquery.validate.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>
