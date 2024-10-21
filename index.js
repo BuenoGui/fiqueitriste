@@ -13,20 +13,14 @@ $(document).ready(function() {
             corpoCarrinho.innerHTML = "";
 
             for (let item in Carrinho) {
-                let itemHtml = '<div class="item">';
-                itemHtml += '<div class="card" style="max-width: 360px;">' 
-                itemHtml += '<div class="d-flex">'
-                itemHtml += `<img src="${Carrinho[item].foto}">`
-                itemHtml += '<div class="card-body d-flex">'
-                itemHtml += `<h2 class="h4">${item}</h2>`
-                itemHtml += '<div class="d-flex">'
-                itemHtml += '<p>quantidade:</p>'
-                itemHtml += '<div class="d-flex">'
-                itemHtml += '<button type="button" class="btn btn-light">+</button>'
-                itemHtml += '<strong>1</strong>'
-                itemHtml += '<button type="button" class="btn btn-light">-</button>'
-                itemHtml += '</div>'
-                itemHtml += '</div>'
+                let itemHtml = '<div class="item mt-3">'
+                itemHtml += '<div class="card text-center">' 
+                itemHtml += `<h2 class="h4 mb-3"> ${Carrinho[item].nome}</h2>`
+                itemHtml += `<img src="${Carrinho[item].foto}" class="rounded">`
+                itemHtml += '<div class="btn-carrinho d-flex  justify-content-around align-items-center align-self-center">'
+                itemHtml += `<button class="btn btn-success">+</button>`
+                itemHtml += `<p>${Carrinho[item].quantidade}</p>`
+                itemHtml += `<button class="btn btn-danger">-</button>`
                 itemHtml += '</div>'
                 itemHtml += '</div>'
                 itemHtml += '</div>'
@@ -38,10 +32,10 @@ $(document).ready(function() {
 
         function AtualizarTotal (button) {
 
-            const carta = $(button).closest('.card-body')
+            const carta = $(button).closest('.card')
             const ItemEscolhido = carta.find('h4').text();
-            const PrecoEscolhido = parseFloat(carta.find('#Valor').text().replace(",","."));
-            const FotoEscolhida = carta.parent().find('img').attr('src');
+            const PrecoEscolhido = parseFloat(carta.find('strong').text().replace("R$ ",""));
+            const FotoEscolhida = carta.find('img').attr('src');
 
             if (Carrinho[ItemEscolhido]) {
                 Carrinho[ItemEscolhido].quantidade += 1;
@@ -49,7 +43,8 @@ $(document).ready(function() {
                 Carrinho[ItemEscolhido] = {
                     quantidade: 1,
                     preco: PrecoEscolhido,
-                    foto: FotoEscolhida
+                    foto: FotoEscolhida,
+                    nome: ItemEscolhido
                 };
             }
 
