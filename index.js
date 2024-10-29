@@ -72,7 +72,9 @@ $(document).ready(function() {
             ItemEscolhido = carouselItem.find('h4').text().trim();
             PrecoEscolhido = parseFloat(carouselItem.find('strong').text().replace("R$ ","").replace(",","."));
             FotoEscolhida = carouselItem.find('img').attr('src');
-        } 
+        } else if ($(button).closest('#total').length) {
+            console.log("corinthias")
+        }
         else {
             const carta = $(button).closest('.card');
             ItemEscolhido = carta.find('h4').text().trim();
@@ -99,6 +101,12 @@ $(document).ready(function() {
         const Total = document.getElementById("total");
         Total.innerHTML = `Total: R$ ${PrecoTotal.toFixed(2).replace(".",",")}`;
     }
+
+    // MODAL
+
+    $("#finalizar").on('click', function() {
+        $("#modal").modal('show')
+    } )
 
 
 });

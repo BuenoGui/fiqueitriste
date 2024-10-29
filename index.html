@@ -596,13 +596,26 @@
 
                 <div class="text-center total-carrinho" id="final-carrinho">
                     <h3 id="total">Total: R$ 0</h3>
-                    <button class="btn btn-success">
-                        Fechar carrinho
+                    <button class="btn btn-success" id="finalizar">
+                        Fechar carrinho!
                     </button>
                 </div>
             </div>
         </section>
 
+        <div class="modal" id="modal" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>!!__Erro__!!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>id#001 <br> Não é possivel concluir a compra sem estar logado! <br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
