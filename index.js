@@ -108,5 +108,8 @@ $(document).ready(function() {
         $("#modal").modal('show')
     } )
 
+    $(".btn-login").on('click', function() {
+        $("#modal_login").modal('show')
+    })
 
 });
