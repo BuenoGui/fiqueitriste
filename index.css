@@ -128,6 +128,10 @@ div.card-body img {
     margin: 4%;
 }
 
+.carousel {
+    z-index: 0;
+}
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     background-color: #00000091;
@@ -262,4 +266,69 @@ aside ul {
 
 #final-carrinho {
     margin-bottom: 4%;
+}
+
+
+@media screen and  (max-width: 640px) {
+    
+    section {
+        height: 100vh;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .header-princial > .container h1 {
+        width: 60%;
+    }
+
+    .header-princial > .container > .botoes {
+        width: 40%;
+        justify-content: space-around;
+    }
+
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .carousel-item > .texto p {
+        display: none;
+    }
+
+    .carousel-item .card-body {
+        width: 90%;
+    }
+
+    .carousel-indicators {
+        width: 50%;
+        position: relative;
+        margin: 0;
+        margin-top: 5%;
+        align-self: center;
+    }
+
+
+    .tabela-itens {
+        align-items: center;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .tabela-itens > .card {
+        width: 80%;
+        height: 55vh;
+    }
+
+
+
 }
